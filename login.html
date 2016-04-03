@@ -1,35 +1,37 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Login page</title>
+	<link rel='stylesheet' href='main-style.css'/>
     </head>
-    <link rel='stylesheet' href='main-style.css'/>
     <body>
-        <div class='header'>
-    <img src="http://41.media.tumblr.com/a449191b5633bc766670d7e56efb0dea/tumblr_o51a7ggtBn1ub41coo1_1280.jpg" 
-    style="float:left; padding: 10px; width: 100px; " />
-    <h1 id='title'>Grapevine</h1>
-    <div class='nav'>
+  <body>
+      <div class='header'>
+	<div class='container'>
+	<img src="logo.png"> 
+	style="float:left; padding: 10px; width: 100px; " />
+	<h1 id='title'>Grapevine</h1>
+	<div class='nav'>
             <ul>
-           <div class='navleft'>
-                 <li class='selected'>Home</li>
-             <li>About</li>
-           </div>
-           <div class='navright'>
-                 <li>Sign Up</li>
-             <li id = 'last'>Login </li>
-           </div>
-        </ul>
-    </div>
-    </div>
-
+	       <div class='navleft'>
+                 <li id='first'><a href="main.html">Home</a></li>
+   	         <li> <a href="about.html">About</a></li>
+	       </div>
+	       <div class='navright'>
+                 <li><a href= "signup.html">Sign Up</a></li>
+	         <li class='selected' id = 'last'>Login</li>
+	       </div>
+	    </ul>
+	</div>
+       </div>
+	</div>
+	 <div class= 'jumbotron'>
+	     <div class= 'main'>
         <form name="login">
-            Username<input type="text" name="userid"/>
-            Password<input type="password" name="pswrd"/>
+            <h2 id="formheader">Username</h2><input type="text" name="userid"/>
+            <h2 id="formheader">Password</h2><input type="password" name="pswrd"/>
             <input type="button" onclick="check(this.form)" value="Login"/>
-            <input type="reset" value="Cancel"/>
         </form>
         <script language="javascript">
-
             function check(form) { /*function to check userid & password*/
                 /*the following code checkes whether the entered userid and password are matching*/
                 if(form.userid.value == "" && form.pswrd.value == "") {
@@ -40,17 +42,14 @@
                 }
             }
         </script>
-
+</div>
+	</div> 
 
         <div class='footer'>
-      <div class='lowermenu'>
-        <ul>
-          <li>Contact Us</li>
-          <li></li>
-          <li></li>
-        </ul>
-        <p>Copyright &copy Pythons That Byte</p>
-      </div>
-    </div>
+	  <div class='lowermenu'>
+	    
+	    <p>Copyright &copy Pythons That Byte</p>
+	  </div>
+	</div>
     </body>
 </html>
