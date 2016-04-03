@@ -2,45 +2,42 @@
 <html>
   <head>
   <link rel='stylesheet' href='main-style.css'/>
+  <script src="jquery-1.12.0.min.js"></script>
   </head>
   <body>
       <div class='header'>
-	<img src="http://41.media.tumblr.com/a449191b5633bc766670d7e56efb0dea/tumblr_o51a7ggtBn1ub41coo1_1280.jpg" 
+	<div class='container'>
+	<img src="logo.png"> 
 	style="float:left; padding: 10px; width: 100px; " />
 	<h1 id='title'>Grapevine</h1>
 	<div class='nav'>
             <ul>
 	       <div class='navleft'>
-                 <li class='selected'>Home</li>
-   	         <li>About</li>
+                 <li class='selected' id='first'>Home</li>
+   	         <li><a href= "about.html">About</a></li>
 	       </div>
 	       <div class='navright'>
-                 <li>Sign Up</li>
-	         <li id = 'last'>Login </li>
+                 <li><a href= "signup.html">Sign Up</a></li>
+	         <li id = 'last'><a href= "login.html">Login</a> </li>
 	       </div>
 	    </ul>
 	</div>
        </div>
-	 <div class= 'body'>
+	</div>
+	 <div class= 'jumbotron'>
+	    <div class='container>
 	     <div class= 'main'>
-		<h1>Welcome to Grapevine!</h1>
-		<p class = "btn-main" onclick = "direct()">Sign Up/Login</p> 
-		<script> 
-			function direct(){
-				window.open("login.html")
-			}
-		</script>
+		<h1 id='texttitle'>Welcome to Grapevine!</h1>
+		<a href = "login.html" class = "btn-main">Login</a>
 	      </div>
+	</div>     
 	  </div>
 	<div class='footer'>
 	  <div class='lowermenu'>
-	    <ul>
-	      <li>Contact Us</li>
-	      <li></li>
-	      <li></li>
-	    </ul>
+	    
 	    <p>Copyright &copy Pythons That Byte</p>
 	  </div>
 	</div>
   </body>
 </html>
+
