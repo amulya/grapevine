@@ -25,24 +25,44 @@
        </div>
 	</div>
 	 <div class= 'jumbotron'>
+	<p id="errormsg"></p>
+	<p id="confirmation"></p>
 	     <div class= 'main'>
-        <form name="login">
+        <form name="signin">
             <h2 id="formheader">Username</h2><input type="text" name="userid"/>
 	    <h2 id="formheader">Email</h2><input type="text" name="userid"/>
             <h2 id="formheader">Password</h2><input type="password" name="pswrd"/>
-            <input type="button" onclick="check(this.form)" value="Sign Up"/>
-        </form>
-        <script language="javascript">
-            function check(form) { /*function to check userid & password*/
-                /*the following code checkes whether the entered userid and password are matching*/
-                if(form.userid.value == "" && form.pswrd.value == "") {
-                    window.open('main.html')/*opens the target page while Id & password matches*/
-                }
-                else {
-                    alert("Error Password or Username")/*displays error message*/
-                }
+            <input type="button" onclick="signup(this.form)" value="Sign Up"/>
+	    <script language="javascript">
+            function signup(form) { 
+		var array = [][];
+		function signup(this.form) {
+    			var x = document.getElementById("signin");
+    			var i;
+    			var isError = false;
+ 	 		for (i = 0; i < array.length; i++){
+				for (var j = 0; j < array[i].length - 2; j++){
+					if ( j == 0 && x[j]== array[i,j]){
+						document.getElementById("errormsg").innerHTML = "Username already taken. Please choose another.";
+						isError = true;
+						break;
+					}
+					if ( j == 1 && x[j]== array[i,j]){
+						document.getElementById("errormsg").innerHTML = "Email already in use.";
+						isError = true;
+						break;
+					}
+   				}
+			}
+    			if (!isError){
+    				array.push(x);
+    				document.getElementById("confirmation").innerHTML = "Registered! Please log in!";
+			}
             }
-        </script>
+	</script>
+        </form>
+
+
 </div>
 	</div> 
 
