@@ -1,15 +1,27 @@
+@font-face{
+	font-family: springscript;
+	src: url('Spring Script.ttf');
+}
+@font-face{
+	font-family: dreamer;
+	src: url('Dreamer.ttf');
+}
 html, body {
 	margin: 0;
 	padding: 0;
 }
 .header{
-	background-color: #2091C5;
+	margin-top: 0;
+	background-color: #300532;
 	text-align: center;
 }
 .header h1{
 	padding-top:50px;
 	color: #ffffff;
+	font-size: 40;
+	font-family: springscript;
 	text-transform: uppercase;
+	font-weight: bold;
 	
 }
 .nav{
@@ -21,11 +33,19 @@ html, body {
 .nav li{
 	display: inline;
 	color: #ffffff;
+	font-family: dreamer;	
 	font-weight: 600;
 	font-size: 16px;
 	display: inline;
 	padding-right: 9em;
 	text-transform: uppercase;
+}
+.nav li:hover{
+	text-shadow: 2px 2px 5px white;
+}
+.selected{
+	text-shadow: 2px 2px 5px white;
+	text-decoration: underline;
 }
 #last{
 	padding-right: 0;
@@ -40,7 +60,7 @@ html, body {
 }
 .body{
 	height: 800px;
-	background-color:#a9dded;
+	background-color: white;
 }
 .main{
 	position: relative;
@@ -50,11 +70,13 @@ html, body {
 .main h1{
 	text-transform: uppercase;
 	font-size: 70px;
+	font-family: springscript;
 }
 .btn-main{
 	font-size: 20px;
+	font-weight: bold;
 	position: relative;
-	background-color:#2091C5;
+	background-color:#300532;
 	color:#ffffff;
 	height: 60px;
 	width: 300px;
@@ -64,8 +86,11 @@ html, body {
 	padding-bottom: 0;
 	border-radius: 25px;
 }
+.btn-main:hover{
+	background-color: #AA3763;
+}
 .footer{
-	background-color:#2091C5;
+	background-color:#300532;
 }
 .lowermenu{
 	padding:20px 0;
@@ -78,4 +103,7 @@ html, body {
 	display: inline;
 	padding-right: 10em;
 	text-transform: uppercase;
+}
+.lowermenu p{
+	text-align: center;
 }
