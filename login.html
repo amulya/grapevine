@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Login page</title>
+    </head>
+    <link rel='stylesheet' href='main-style.css'/>
+    <body>
+        <div class='header'>
+    <img src="http://41.media.tumblr.com/a449191b5633bc766670d7e56efb0dea/tumblr_o51a7ggtBn1ub41coo1_1280.jpg" 
+    style="float:left; padding: 10px; width: 100px; " />
+    <h1 id='title'>Grapevine</h1>
+    <div class='nav'>
+            <ul>
+           <div class='navleft'>
+                 <li class='selected'>Home</li>
+             <li>About</li>
+           </div>
+           <div class='navright'>
+                 <li>Sign Up</li>
+             <li id = 'last'>Login </li>
+           </div>
+        </ul>
+    </div>
+    </div>
+
+        <form name="login">
+            Username<input type="text" name="userid"/>
+            Password<input type="password" name="pswrd"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+        <script language="javascript">
+
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "" && form.pswrd.value == "") {
+                    window.open('main.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+        </script>
+
+
+        <div class='footer'>
+      <div class='lowermenu'>
+        <ul>
+          <li>Contact Us</li>
+          <li></li>
+          <li></li>
+        </ul>
+        <p>Copyright &copy Pythons That Byte</p>
+      </div>
+    </div>
+    </body>
+</html>
