@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel='stylesheet' href='main-style.css'/>
+  <link rel='stylesheet' href='messaging-style.css'/>
+  </head>
+  <body>
+      <div class='header'>
+	<img src="http://41.media.tumblr.com/a449191b5633bc766670d7e56efb0dea/tumblr_o51a7ggtBn1ub41coo1_1280.jpg" 
+	style="float:left; padding: 10px; width: 100px; " />
+	<h1 id='title'>Grapvine</h1>
+	<div class='nav'>
+            <ul>
+	       <div class='navleft'>
+                 <li class='selected'>Home</li>
+   	         <li>About</li>
+	       </div>
+	       <div class='navright'>
+                 <li>Sign Up</li>
+	         <li id = 'last'>Login </li>
+	       </div>
+	    </ul>
+	</div>
+       </div>
+	 
+	 <div class = "wrapper">
+	 	<h3>Talk to a friend!</h3>
+	 	<div id = "messagebox">
+	 	</div>
+	 	 	<form name="login">
+	            Type Something!<input type="text" name="txtinput"/>
+	            <input type="button" onclick="append(this.form)" value=":D!"/>
+	            <script language="javascript">
+		            function append(form) { /*function to check userid & password*/
+		                /*the following code checkes whether the entered userid and password are matching*/
+		               	v = document.getElementById("messagebox")
+		               	node = document.createElement("LI")
+		               	val = document.createTextNode(form.txtinput.value)
+		               	node:appendChild(val)
+		               	v:appendChild(node)
+		            }
+        		</script>
+        	</form>
+	 </div>
+
+	<div class='footer'>
+	  <div class='lowermenu'>
+	    <ul>
+	      <li>Contact Us</li>
+	      <li></li>
+	      <li></li>
+	    </ul>
+	    <p>Copyright &copy Pythons That Byte</p>
+	  </div>
+	</div>
+  </body>
+</html>
