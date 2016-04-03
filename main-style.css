@@ -107,3 +107,8 @@ html, body {
 .lowermenu p{
 	text-align: center;
 }
+
+form{
+	margin-top: 50px;
+	margin-bottom: 300px;
+}
