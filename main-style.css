@@ -1,0 +1,219 @@
+@font-face{
+	font-family: springscript;
+	src: url('Spring Script.ttf');
+}
+
+@font-face{
+	font-family: dreamer;
+	src: url('Dreamer.ttf');
+}
+*, html, body {
+	margin: 0;
+	padding: 0;
+}
+.header img{
+	position: absolute;
+	float: left;
+}
+.header{
+	margin-top: 0;
+	position: fixed;
+	width: 100%;
+	background-color: #300532;
+	z-index: 10;
+}
+.header h1{
+	padding-top:50px;
+	color: #ffffff;
+	font-size: 40;
+	font-family: springscript;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	
+}
+.nav{
+	margin: 0;
+ 	padding: 25px 0;
+ 	text-align: center;
+}
+.nav li{
+	display: inline;
+	color: #ffffff;
+	font-family: dreamer;	
+	font-weight: 600;
+	font-size: 16px;
+	display: inline;
+	padding-right: 15%;
+	text-transform: uppercase;
+}
+.header a:hover{
+	text-shadow: 2px 2px 5px white;
+	transition: all 0.3s;
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.selected{
+	text-shadow: 2px 2px 5px white;
+	text-decoration: underline;
+}
+#last{
+	padding-right: 0;
+}
+
+.jumbotron {
+	height: 100vh;
+	perspective: 1px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.pagetitle{
+	text-transform: uppercase;
+	font-size: 50px;
+	font-family: springscript;
+	text-align: center;
+	padding-top: 13%;
+	text-shadow: 0 0 5px white;
+	font-weight: bold;
+}
+.description{
+	font-size: 30px;
+	text-shadow: 0 0 10px white;
+	font-weight: 600px;
+	margin: 0 0 20% 20%;
+	padding-right: 20%;
+	font-weight: bold;
+	text-align: center;
+	
+}
+.parallax__layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+.main{
+	height: 100vh;
+	width: 100%;
+	padding-top: 13%;
+	position: absolute;
+	transform: translateZ(0);
+	text-align: center;
+}
+.about{
+	position: relative;
+}
+.background{
+	position: relative;
+	z-index:-1;
+	transform: translateZ(-1px) scale(2);
+}
+#texttitle{
+	text-transform: uppercase;
+	font-size: 70px;
+	padding-top: 10%;
+	font-family: springscript;
+	text-shadow: 0 0 5px white;
+	font-weight: bold;
+	z-index: 1;
+	margin-bottom: 50px;
+}
+.btn-main{
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	background-color:#300532;
+	color:#ffffff;
+	text-transform:uppercase;
+	letter-spacing: 1.3px;
+	padding: 1.5% 2% 1.5% 2%;	
+	border-radius: 25px;
+	text-align: center;
+}
+.btn-main:hover{
+	background-color: #AA3763;
+	transition: all .5s;
+}
+.footer{
+	background-color:#300532;
+}
+.lowermenu{
+	padding:20px;
+	color: #ffffff;
+}
+.lowermenu p{
+	text-align: center;
+}
+
+#formheader{
+	text-transform: uppercase;
+	font-size: 70px;
+	font-family: springscript;
+	text-align: center;
+	padding-top: 2%;
+	margin-top: 0;
+	text-shadow: 0 0 5px white;
+	font-weight: bold;
+}
+input[type=text]{
+	margin-left: 35%;
+	width: 30%;
+	height: 7%;
+	box-sizing: border-box;
+}
+input[type=text]:focus{
+	background-color: lightblue;
+}
+input[type=password]{
+	margin-left: 35%;
+	width: 30%;
+	height: 7%;
+	box-sizing: border-box;
+
+}
+input[type=password]:focus{
+	background-color: lightblue;
+}
+input[type=button]{
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	background-color:#300532;
+	color:#ffffff;
+	text-transform:uppercase;
+	margin: 2% 0 0 43%;
+	padding: 2% 5% 2% 5%;	
+	border-radius: 25px;
+	text-align: center;
+}
+input[type=button]:hover{
+	background-color: #AA3763;
+}
+#errormsg {
+	position: absolute;
+	color: red;
+	z-index: 1;
+	margin: 2% 0 0 43%;
+	font-weight: bold;
+	font-size: 20px;
+	text-shadow: 0 0 10px white;
+}
+
+#confirmation {
+	position: absolute;
+	color: lightgreen;
+	z-index: 1;
+	margin: 2% 0 0 43%;
+	font-weight: bold;
+	font-size: 20px;
+	text-shadow: 0 0 10px white;
+}
